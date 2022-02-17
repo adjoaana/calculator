@@ -1,0 +1,90 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    font-size: 100%;
+    box-sizing: inherit;
+}
+body{
+    width: inherit;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    background-color: violet;
+}
+.calc__container{
+    width: 300px;
+    margin:  2rem auto;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.calc__card{
+    width: 100px;
+    height: 100px;
+  
+}
+.calc__output{
+    width: 90%;
+    font-size: 40px;
+    text-align: right;
+    padding: 5px;
+    height: 50px;
+    margin: 1rem auto ;
+    border: darkolivegreen solid 1px;
+    
+} 
+.calc__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, ifr);
+    gap: 1rem;
+    margin:2rem 2rem 0 2rem;
+   }
+    
+    .calc__grid__item button,.calc__flex__item button {
+        width: 50px;
+        height: 50px;
+        border: solid black 1px;
+        border-radius: 50%;
+    }
+ 
+    .calc__grid__item button:hover,.calc__flex__item button:hover{
+        background-color: rgb(184, 125, 125);
+        color: antiquewhite;
+
+    }
+    .calc__grid__item .double{
+        width: 100px;
+        height: 100px;
+    }
+    .calc__flex{
+        margin-top: 1rem;
+        display: flex;
+        padding-bottom: 2rem;
+    }
+    .calc__flex__item button{
+        flex: 1;
+        margin-left: 1rem;
+    }
+    .calc__flex__item button:last-child{
+        margin-left: .9rem;
+    }
+    .calc__flex__item button.double{
+        margin: 0 0 2rem 2rem;
+        flex: 2;
+        width: 120px;
+        height: 50px;
+        border: solid black 1px;
+        border-radius: 20px;
+    }
+    .calc__grid__item button.operator,.calc__flex__item button.operator{
+        font-weight: bold;
+        font-size: large;
+        background-color: orange;
+    }
+    .calc__grid__item button.operator:hover,.calc__flex__item button.operator:hover{
+        background-color: rgb(110, 77, 16);
+        color: antiquewhite;
+
+    }
+
